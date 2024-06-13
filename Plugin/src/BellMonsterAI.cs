@@ -67,7 +67,7 @@ namespace BellMonster {
                     break;
 
                 case (int)State.ChasingPlayer:
-                    agent.speed = 4f;
+                    agent.speed = 3f;
                     // Keep targeting closest player, unless they are over 10 units away and we can't see them.
                     if (!TargetClosestPlayerInAnyCase() || (Vector3.Distance(transform.position, targetPlayer.transform.position) > 20 && !CheckLineOfSightForPosition(targetPlayer.transform.position))){
                         LogIfDebugBuild("Stop Target Player");
