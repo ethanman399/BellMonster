@@ -3,8 +3,6 @@ using System.Diagnostics;
 using GameNetcodeStuff;
 using Unity.Netcode;
 using UnityEngine;
-using BepInEx.Logging;
-using HarmonyLib.Tools;
 using System.Threading;
 
 namespace BellMonster {
@@ -60,7 +58,7 @@ namespace BellMonster {
 
             switch(currentBehaviourStateIndex) {
                 case (int)State.SearchingForPlayer:
-                    agent.speed = 2f;
+                    agent.speed = 1f;
                     if (FoundClosestPlayerInRange(15f, 10f)){
                         LogIfDebugBuild("Start Target Player");
                         StopSearch(currentSearch);
@@ -69,7 +67,7 @@ namespace BellMonster {
                     break;
 
                 case (int)State.ChasingPlayer:
-                    agent.speed = 5f;
+                    agent.speed = 4f;
                     // Keep targeting closest player, unless they are over 10 units away and we can't see them.
                     if (!TargetClosestPlayerInAnyCase() || (Vector3.Distance(transform.position, targetPlayer.transform.position) > 20 && !CheckLineOfSightForPosition(targetPlayer.transform.position))){
                         LogIfDebugBuild("Stop Target Player");
