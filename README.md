@@ -19,7 +19,6 @@ Bell Monster made by [@Drak]().
 =======
 To-do: Add custom ragdoll with head replaced by bell prop.
 
->>>>>>> befb5ace0accaa0a72b27df954d68d39d1a2b356
 Feel free to suggest any changes, fixes, etc. 
 
 This is my first (a) mod (for any game), (b) time working with unity, (c) time publishing anything, so please don't be too harsh on me c:
