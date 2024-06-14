@@ -3,7 +3,6 @@ Mod that adds a simple invisible enemy which the player much avoid via sound.
 Bell Monster made by [@Drak]().
 
 ## Credits
-=======
 
 -Based off of the ExampleEnemy template from [@Hamunii](https://github.com/Hamunii/LC-ExampleEnemy).
 
@@ -13,7 +12,6 @@ Bell Monster made by [@Drak]().
 
 -Add custom ragdoll with head replaced by bell prop.
 
-=======
 To-do: Add custom ragdoll with head replaced by bell prop.
 
 Feel free to suggest any changes, fixes, etc. 
