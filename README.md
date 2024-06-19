@@ -1,25 +1,19 @@
 Mod that adds a simple invisible enemy which the player much avoid via sound.
 
 Bell Monster made by [@Drak]().
-<<<<<<< HEAD
 
 ## Credits
-=======
->>>>>>> befb5ace0accaa0a72b27df954d68d39d1a2b356
 
 -Based off of the ExampleEnemy template from [@Hamunii](https://github.com/Hamunii/LC-ExampleEnemy).
 
 -Big thanks to [Xu Xiaolan](https://github.com/XuuXiao)'s Tutorial on [Youtube](https://www.youtube.com/watch?v=NZ_F8wDczzM), I helped a LOT with beginning to understand how to mod Lethal Company (and just how to mod in general).
 
-<<<<<<< HEAD
 ## To-do
 
 -Add custom ragdoll with head replaced by bell prop.
 
-=======
 To-do: Add custom ragdoll with head replaced by bell prop.
 
->>>>>>> befb5ace0accaa0a72b27df954d68d39d1a2b356
 Feel free to suggest any changes, fixes, etc. 
 
 This is my first (a) mod (for any game), (b) time working with unity, (c) time publishing anything, so please don't be too harsh on me c:
