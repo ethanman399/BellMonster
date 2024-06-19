@@ -93,7 +93,7 @@ namespace BellMonster {
                 if (currentBehaviourStateIndex == (int)State.SearchingForPlayer)
                 {
                     //While searching for player, mimic belldrop sfx of handbell item (vanilla LC)
-                    Plugin.Logger.LogInfo("Playing bellStep sound (Searching)");
+                    LogIfDebugBuild("Playing bellStep sound (Searching)");
                     creatureSFX.pitch = 1f;
                     switch (bellPitchRandom?.Next(0, 7))
                     {
@@ -121,14 +121,14 @@ namespace BellMonster {
                     WalkieTalkie.TransmitOneShotAudio(creatureSFX, Plugin.bellStep);
 
                     //Play randomly every 3f-4f
-                    yield return new WaitForSeconds(UnityEngine.Random.Range(3f, 4f));
+                    yield return new WaitForSeconds(UnityEngine.Random.Range(3f, 6f));
                     yield return null;
                 }
 
                 //While chasing player, play distorted creepy version of belldrop sfx
                 if (currentBehaviourStateIndex == (int)State.ChasingPlayer)
                 {
-                    Plugin.Logger.LogInfo("Playing bellStep sound (Chasing)");
+                    LogIfDebugBuild("Playing bellStep sound (Chasing)");
                     //Plays at a much lower pitch and faster pace compared to searching
                     creatureSFX.pitch = UnityEngine.Random.Range(0.2f, 0.4f);
                     creatureSFX.PlayOneShot(Plugin.bellStep);
